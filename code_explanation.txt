@@ -1,0 +1,22 @@
+LIBRARIES REQUIRED FOR WORKING WITH PYSPARK
+===================================================================================================
+pip intsall pyspark=3.4.2
+pip install psycopg2
+
+from pyspark.sql import SparkSession
+from pyspark.sql import DataFrameWriter
+from pyspark.sql.functions import monotonically_increasing_id
+import psycopg2
+============================================================================================================================
+
+
+FOR LOADING DATA INTO THE POSTGRES DATABASE WE USE JDBC EXTENSION
+=====================================================================================================================
+https://jdbc.postgresql.org/download/
+
+Note: Comopatibility issues may arise with the JAVA version being used on PC.
+To address this issues, the following options can be considered
+
+- Downgrade the current JAVA version to a version that is compatible with the JDBC EXTENSION
+- Downlaod the required JAVA version(JAVA 8) and set the enviroment variable of the script to the location of the compatible JAVA version we want to used
+
