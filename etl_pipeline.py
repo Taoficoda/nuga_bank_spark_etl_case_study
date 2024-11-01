@@ -160,4 +160,4 @@ employee.write.jdbc(url=url, table="employee", mode="append", properties=propert
 transaction.write.jdbc(url=url, table="transaction", mode="append", properties=properties)
 nuga_fact_table.write.jdbc(url=url, table="nuga_fact_table", mode="append", properties=properties)
 
-print('Databe table created and loaded successfully')
+print('Databese table created and loaded successfully')
